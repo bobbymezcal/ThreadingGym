@@ -24,11 +24,11 @@ public class Gym {
                     member.performRoutine();
                 } catch (Exception e) {
                     System.out.println(e);
-
                 }
             });
         })
         .collect(Collectors.toList);
+        gymMembersRoutines.forEach(Thread::start);
 
     }
 
