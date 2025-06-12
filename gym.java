@@ -1,6 +1,7 @@
 import java.util.Map;
 import java.util.List;
 import java.util.stream.IntStream;
+import java.util.stream.Collectors;
 
 public class Gym {
     // instance fields
@@ -15,7 +16,7 @@ public class Gym {
 
     public void openForTheDay() {
         List<Thread> gymMembersRoutines;
-        gymMembersRoutines = IntStream.rangeClosed(1, this.totalGymMembers).mapToObj();
+        gymMembersRoutines = IntStream.rangeClosed(1, this.totalGymMembers).mapToObj().collect(Collectors.toList);
 
     }
 
