@@ -45,8 +45,13 @@ public class Gym {
                     System.out.println(runningThreads.size() + " members currently working out:");
                     System.out.println(runningThreads.toString());
                 }
-
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    System.out.println("Supervisor interrupted: " + e.getMessage());
+                }
             }
+
         });
         return supervisor;
     }
