@@ -29,7 +29,8 @@ public class Gym {
         })
         .collect(Collectors.toList);
         gymMembersRoutines.forEach(Thread::start);
-
     }
+
+    private Thread createSupervisor(List<Thread> threads) {}
 
 }
