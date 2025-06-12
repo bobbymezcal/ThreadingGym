@@ -31,6 +31,9 @@ public class Gym {
         gymMembersRoutines.forEach(Thread::start);
     }
 
-    private Thread createSupervisor(List<Thread> threads) {}
+    private Thread createSupervisor(List<Thread> threads) {
+        Thread supervisor = new Thread(() -> {});
+        return supervisor;
+    }
 
 }
