@@ -2,6 +2,7 @@ import java.util.Map;
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Collectors;
+import java.util.HashMap;
 
 public class Gym {
     // instance fields
@@ -12,6 +13,20 @@ public class Gym {
     public Gym(int totalGymMembers, Map<MachineType, Integer> availableMachines) {
         this.totalGymMembers = totalGymMembers;
         this.availableMachines = availableMachines;
+    }
+
+    public static void main(String[] args) {
+        Gym pausGym = new Gym(5, new HashMap<>() {
+            {
+                put(MachineType.LEGPRESSMACHINE, 5);
+                put(MachineType.BARBELL, 5);
+                put(MachineType.SQUATMACHINE, 5);
+                put(MachineType.LEGEXTENSIONMACHINE, 5);
+                put(MachineType.LEGCURLMACHINE, 5);
+                put(MachineType.LATPULLDOWNMACHINE, 5);
+                put(MachineType.CABLECROSSOVERMACHINE, 5);
+            }
+        });
     }
 
     public void openForTheDay() {
