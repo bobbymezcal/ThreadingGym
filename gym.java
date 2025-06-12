@@ -11,4 +11,6 @@ public class Gym {
         this.availableMachines = availableMachines;
     }
 
+    public void openForTheDay() {}
+
 }
