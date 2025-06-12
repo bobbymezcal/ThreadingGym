@@ -28,6 +28,7 @@ public class Gym {
             });
         })
         .collect(Collectors.toList);
+        Thread supervisor = createSupervisor(gymMembersRoutines);
         gymMembersRoutines.forEach(Thread::start);
     }
 
