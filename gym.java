@@ -51,6 +51,8 @@ public class Gym {
                     System.out.println("Supervisor interrupted: " + e.getMessage());
                 }
             }
+            System.out.println("Current thread: " + Thread.currentThread().getName());
+            System.out.println("All threads have completed.");
 
         });
         return supervisor;
