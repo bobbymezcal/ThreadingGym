@@ -55,6 +55,7 @@ public class Gym {
             System.out.println("All threads have completed.");
 
         });
+        supervisor.setName("Gym Staff");
         return supervisor;
     }
 
