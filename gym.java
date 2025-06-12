@@ -34,7 +34,10 @@ public class Gym {
     private Thread createSupervisor(List<Thread> threads) {
         Thread supervisor = new Thread(() -> {
             while (true) {
-                
+                List<String> runningThreads = threads.stream()
+                .filter(Thread::isAlive)
+                .map(thread -> thread.getName())
+                .collect(Collectors.toList());
             }
         });
         return supervisor;
