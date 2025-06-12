@@ -5,5 +5,10 @@ public class Gym {
     private final int totalGymMembers;
     private Map<MachineType, Integer> availableMachines;
 
+    // constructor
+    public Gym(int totalGymMembers, Map<MachineType, Integer> availableMachines) {
+        this.totalGymMembers = totalGymMembers;
+        this.availableMachines = availableMachines;
+    }
 
 }
