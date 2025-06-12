@@ -21,8 +21,9 @@ public class Gym {
             Member member = new Member(id);
             return new Thread(() -> {
                 try {
-
+                    member.performRoutine();
                 } catch (Exception e) {
+                    System.out.println(e);
 
                 }
             });
