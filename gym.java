@@ -19,8 +19,7 @@ public class Gym {
         gymMembersRoutines = IntStream.rangeClosed(1, this.totalGymMembers)
         .mapToObj((id) -> {
             Member member = new Member(id);
-            return;
-
+            return new Thread(() -> {});
         })
         .collect(Collectors.toList);
 
