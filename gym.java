@@ -32,7 +32,11 @@ public class Gym {
     }
 
     private Thread createSupervisor(List<Thread> threads) {
-        Thread supervisor = new Thread(() -> {});
+        Thread supervisor = new Thread(() -> {
+            while (true) {
+                
+            }
+        });
         return supervisor;
     }
 
