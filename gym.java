@@ -27,6 +27,7 @@ public class Gym {
                 put(MachineType.CABLECROSSOVERMACHINE, 5);
             }
         });
+        pausGym.openForTheDay();
     }
 
     public void openForTheDay() {
