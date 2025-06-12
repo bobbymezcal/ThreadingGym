@@ -17,7 +17,10 @@ public class Gym {
     public void openForTheDay() {
         List<Thread> gymMembersRoutines;
         gymMembersRoutines = IntStream.rangeClosed(1, this.totalGymMembers)
-        .mapToObj((id) -> )
+        .mapToObj((id) -> {
+            Member member = new Member(id);
+            
+        })
         .collect(Collectors.toList);
 
     }
