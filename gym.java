@@ -1,4 +1,5 @@
 import java.util.Map;
+import java.util.List;
 
 public class Gym {
     // instance fields
@@ -11,6 +12,8 @@ public class Gym {
         this.availableMachines = availableMachines;
     }
 
-    public void openForTheDay() {}
+    public void openForTheDay() {
+        List<Thread> gymMembersRoutines;
+    }
 
 }
