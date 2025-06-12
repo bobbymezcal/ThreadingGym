@@ -38,9 +38,13 @@ public class Gym {
                 .filter(Thread::isAlive)
                 .map(thread -> thread.getName())
                 .collect(Collectors.toList());
-                System.out.println("Current thread: " + Thread.currentThread().getName());
-                System.out.println(runningThreads.size() + " members currently working out:");
-                System.out.println(runningThreads.toString());
+                if (runningThreads.isEmpty()) {
+                    break;
+                } else {
+                    System.out.println("Current thread: " + Thread.currentThread().getName());
+                    System.out.println(runningThreads.size() + " members currently working out:");
+                    System.out.println(runningThreads.toString());
+                }
 
             }
         });
